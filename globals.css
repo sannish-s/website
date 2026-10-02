@@ -1,0 +1,147 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  min-height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+/* @FONTWARNING[{"type": "restricted", "family": "Poppins-Regular", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: local("Poppins-Regular");
+}
+/* @FONTWARNING[{"type": "restricted", "family": "Poppins-SemiBold", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: local("Poppins-SemiBold");
+}
+/* @FONTWARNING[{"type": "restricted", "family": "DM Sans-Medium", "weight": "500", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "DM Sans-Medium";
+  src: local("DM Sans-Medium");
+}
+/* @FONTWARNING[{"type": "restricted", "family": "SF Pro", "weight": "var(--typography-3-regular-font-weight)", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "SF Pro";
+  src: local("SF Pro");
+}
+/* @FONTWARNING[{"type": "restricted", "family": "Poppins", "weight": "var(--heading-h5-font-weight)", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins");
+}
+/* @FONTWARNING[{"type": "restricted", "family": "Poppins-Medium", "weight": "500", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: local("Poppins-Medium");
+}
+/* @FONTWARNING[{"type": "restricted", "family": "DM Sans", "weight": "var(--text-xs-bold-font-weight)", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "DM Sans";
+  src: local("DM Sans");
+}
+/* @FONTWARNING[{"type": "restricted", "family": "Poppins-Bold", "weight": "700", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: local("Poppins-Bold");
+}
+
+body > .page-shell {
+  --section-padding: 16px;
+  width: min(100%, 1200px) !important;
+  margin-inline: auto;
+  align-items: center;
+  gap: 24px;
+  overflow: hidden;
+}
+
+.page-shell :lang(en) {
+  font-family: "Poppins", sans-serif;
+}
+
+body > .page-shell > * {
+  width: min(100%, 792px) !important;
+  min-width: 0;
+}
+
+body > .page-shell > :not(.database-record-cta) {
+  padding: var(--section-padding) !important;
+}
+
+body > .page-shell > .hero-section {
+  width: 100% !important;
+}
+
+body > .page-shell > .database-record-cta {
+  width: min(calc(100% - 32px), 760px) !important;
+}
+
+body > .page-shell [class*="w-[275px]"],
+body > .page-shell [class*="w-[289px]"] {
+  width: auto !important;
+  min-width: 0;
+  flex: 1 1 0%;
+}
+
+@media (min-width: 900px) {
+  body > .page-shell {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    justify-items: center;
+    column-gap: clamp(32px, 5vw, 64px);
+    row-gap: 40px;
+    padding-bottom: 40px;
+  }
+
+  body > .page-shell > :first-child,
+  body > .page-shell > :nth-child(4),
+  body > .page-shell > :nth-child(7),
+  body > .page-shell > :nth-child(8) {
+    grid-column: 1 / -1;
+  }
+
+  body > .page-shell > :nth-child(2),
+  body > .page-shell > :nth-child(3),
+  body > .page-shell > :nth-child(5),
+  body > .page-shell > :nth-child(6) {
+    align-self: start;
+    width: 100% !important;
+    max-width: 552px;
+  }
+
+  body > .page-shell > :nth-child(4) {
+    width: min(100%, 1112px) !important;
+  }
+
+  body > .page-shell > :nth-child(7) {
+    width: min(calc(100% - 32px), 760px) !important;
+  }
+
+  body > .page-shell > :nth-child(8) {
+    width: min(100%, 792px) !important;
+  }
+
+  body > .page-shell [class*="text-xs"] {
+    font-size: 13px !important;
+  }
+}

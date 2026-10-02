@@ -1,0 +1,136 @@
+:root {
+  --black: rgba(30, 39, 46, 1);
+  --typography-3-regular-font-family: "SF Pro", Helvetica;
+  --typography-3-regular-font-weight: 400;
+  --typography-3-regular-font-size: 16px;
+  --typography-3-regular-letter-spacing: 0px;
+  --typography-3-regular-line-height: 24px;
+  --typography-3-regular-font-style: normal;
+  --heading-h5-font-family: "Poppins", Helvetica;
+  --heading-h5-font-weight: 600;
+  --heading-h5-font-size: 14px;
+  --heading-h5-letter-spacing: 0.30000001192092896px;
+  --heading-h5-line-height: normal;
+  --heading-h5-font-style: normal;
+  --text-xs-regular-font-family: "DM Sans", Helvetica;
+  --text-xs-regular-font-weight: 400;
+  --text-xs-regular-font-size: 12px;
+  --text-xs-regular-letter-spacing: 0px;
+  --text-xs-regular-line-height: 16px;
+  --text-xs-regular-font-style: normal;
+  --text-xs-bold-font-family: "DM Sans", Helvetica;
+  --text-xs-bold-font-weight: 700;
+  --text-xs-bold-font-size: 12px;
+  --text-xs-bold-letter-spacing: 0px;
+  --text-xs-bold-line-height: 16px;
+  --text-xs-bold-font-style: normal;
+  --text-xs-semi-bold-font-family: "DM Sans", Helvetica;
+  --text-xs-semi-bold-font-weight: 400;
+  --text-xs-semi-bold-font-size: 12px;
+  --text-xs-semi-bold-letter-spacing: 0px;
+  --text-xs-semi-bold-line-height: 16px;
+  --text-xs-semi-bold-font-style: normal;
+  --tokens-4: 4px;
+  --tokens-12: 12px;
+  --tokens-16: 16px;
+  --tokens-24: 24px;
+  --tokens-9999-duplicate: 9999px;
+  --tokens-8-duplicate: 8px;
+  --tokens-8: 8px;
+  --tokens-18: 18px;
+  --tokens-9999: 9999px;
+  --tw-gap-gap-6: var(--tokens-24);
+  --tw-gap-gap-1: var(--tokens-4);
+  --tw-gap-gap-2: var(--tokens-8-duplicate);
+  --tw-gap-gap-3: var(--tokens-12);
+  --tw-gap-gap-4: var(--tokens-16);
+  --rdx-colors-gold-2: rgba(250, 249, 242, 1);
+  --rdx-colors-grass-11: rgba(42, 126, 59, 1);
+  --rdx-colors-grass-9: rgba(70, 167, 88, 1);
+  --rdx-colors-grass-12: rgba(32, 60, 37, 1);
+  --rdx-colors-sky-11: rgba(0, 116, 158, 1);
+  --rdx-colors-gold-10: rgba(140, 122, 94, 1);
+  --rdx-colors-brown-11: rgba(129, 94, 70, 1);
+  --rdx-colors-grass-6: rgba(178, 221, 181, 1);
+  --rdx-colors-lime-11: rgba(92, 124, 47, 1);
+  --rdx-colors-jade-3: rgba(230, 247, 237, 1);
+  --rdx-colors-grass-5: rgba(201, 232, 202, 1);
+  --mode-background: var(--tw-colors-white);
+  --mode-muted-foreground: var(--tw-colors-neutral-500);
+  --mode-foreground: var(--tw-colors-neutral-950);
+  --mode-radius-full: var(--tokens-9999);
+  --mode-border: var(--tw-colors-neutral-200);
+  --mode-radius-md: var(--tokens-8);
+  --mode-radius-2xl: var(--tokens-18);
+  --tw-colors-lime-700: rgba(77, 124, 15, 1);
+  --tw-colors-white: rgba(255, 255, 255, 1);
+  --tw-colors-neutral-950: rgba(10, 10, 10, 1);
+  --tw-colors-neutral-500: rgba(115, 115, 115, 1);
+  --tw-colors-neutral-400: rgba(163, 163, 163, 1);
+  --tw-colors-neutral-50: rgba(250, 250, 250, 1);
+  --tw-colors-neutral-200: rgba(229, 229, 229, 1);
+  --tw-colors-neutral-700: rgba(64, 64, 64, 1);
+  --theme-spacing-4: var(--scaling-100-4);
+  --theme-spacing-1: var(--scaling-100-1);
+  --theme-radius-2-max: var(--radius-medium-2-max);
+  --theme-radius-4-max: var(--radius-medium-4-max);
+  --theme-spacing-2: var(--scaling-100-2);
+  --tw-border-radius-rounded-full: var(--tokens-9999-duplicate);
+  --scaling-100-4: 16px;
+  --scaling-100-1: 4px;
+  --scaling-100-2: 8px;
+  --radius-medium-2-max: 4px;
+  --radius-medium-4-max: 8px;
+}
+
+/*
+
+To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+
+<body data-rdx-colors-mode="light-mode">
+    <!-- the rest of your content -->
+</body>
+
+You can apply the theme on any DOM node, not just the `body`
+
+*/
+
+[data-rdx-colors-mode="light-mode"] {
+  --rdx-colors-gold-2: rgba(250, 249, 242, 1);
+  --rdx-colors-grass-11: rgba(42, 126, 59, 1);
+  --rdx-colors-grass-12: rgba(32, 60, 37, 1);
+  --rdx-colors-sky-11: rgba(0, 116, 158, 1);
+  --rdx-colors-gold-10: rgba(140, 122, 94, 1);
+  --rdx-colors-brown-11: rgba(129, 94, 70, 1);
+  --rdx-colors-grass-6: rgba(178, 221, 181, 1);
+  --rdx-colors-lime-11: rgba(92, 124, 47, 1);
+  --rdx-colors-jade-3: rgba(230, 247, 237, 1);
+  --rdx-colors-grass-5: rgba(201, 232, 202, 1);
+}
+
+[data-rdx-colors-mode="dark-mode"] {
+  --rdx-colors-gold-2: rgba(27, 26, 23, 1);
+  --rdx-colors-grass-11: rgba(113, 208, 131, 1);
+  --rdx-colors-grass-12: rgba(194, 240, 194, 1);
+  --rdx-colors-sky-11: rgba(117, 199, 240, 1);
+  --rdx-colors-gold-10: rgba(163, 144, 115, 1);
+  --rdx-colors-brown-11: rgba(219, 181, 148, 1);
+  --rdx-colors-grass-6: rgba(45, 87, 54, 1);
+  --rdx-colors-lime-11: rgba(189, 229, 108, 1);
+  --rdx-colors-jade-3: rgba(15, 46, 34, 1);
+  --rdx-colors-grass-5: rgba(37, 72, 45, 1);
+}
+
+[data-mode-mode="light-mode"] {
+  --mode-background: var(--tw-colors-white);
+  --mode-muted-foreground: var(--tw-colors-neutral-500);
+  --mode-foreground: var(--tw-colors-neutral-950);
+  --mode-border: var(--tw-colors-neutral-200);
+}
+
+[data-mode-mode="dark-mode"] {
+  --mode-background: var(--tw-colors-neutral-950);
+  --mode-muted-foreground: var(--tw-colors-neutral-400);
+  --mode-foreground: var(--tw-colors-neutral-50);
+  --mode-border: var(--tw-colors-neutral-700);
+}
